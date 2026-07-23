@@ -53,20 +53,6 @@
   </div>
   <h1 style="margin:clamp(24px,3.5vw,40px) 0 0;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:-.015em;font-size:clamp(30px,4.2vw,52px);line-height:1.05">{{curTitle}}</h1>
   <div style="font-size:14px;color:#8b8880;margin-top:12px">{{curMeta}}</div>
-  <div style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,64px);margin-top:clamp(28px,4vw,48px)">
-    <div style="flex:2 1 380px;min-width:280px">
-      <div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#a5a29a">{{ t.synopsis }}</div>
-      <p style="margin:14px 0 0;font-size:16.5px;line-height:1.75;max-width:640px;text-wrap:pretty">{{curSyn}}</p>
-    </div>
-    <div style="flex:1 1 260px;min-width:240px">
-      <div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#a5a29a">{{ t.credits }}</div>
-      <div style="margin-top:8px">
-      <sc-for list="{{curCredits}}" as="c" hint-placeholder-count="4">
-        <div style="display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid #e9e7e2;font-size:14px"><span style="color:#8b8880">{{ c.role }}</span><span style="text-align:right;font-weight:500">{{ c.name }}</span></div>
-      </sc-for>
-      </div>
-    </div>
-  </div>
   <sc-if value="{{hasAwards}}" hint-placeholder-val="{{ false }}">
   <div style="margin-top:clamp(32px,5vw,56px)">
     <div style="font:11px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#a5a29a">{{ t.awardsTitle }}</div>
